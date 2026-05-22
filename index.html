@@ -53,33 +53,7 @@
             100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
         }
 
-        /* ===== MUSIC PLAYER ===== */
-        .music-player-wrap {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 8px 32px rgba(232,84,122,0.25);
-            max-width: calc(100vw - 40px);
-        }
-        .music-player-wrap iframe {
-            display: block;
-            width: 320px;
-            height: 100px;
-            border: none;
-        }
-        @media (max-width: 480px) {
-            .music-player-wrap {
-                bottom: 10px;
-                right: 10px;
-                left: 10px;
-            }
-            .music-player-wrap iframe {
-                width: 100%;
-            }
-        }
+
 
         /* ===== HERO ===== */
         .hero {
@@ -770,10 +744,7 @@
 <!-- Floating petals -->
 <div class="petals-container" id="petals"></div>
 
-<!-- Music player -->
-<div class="music-player-wrap">
-    <iframe frameborder="0" allow="clipboard-write" style="border:none;width:320px;height:100px;" width="320" height="100" src="https://music.yandex.ru/iframe/album/2811785/track/24183553"></iframe>
-</div>
+
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
@@ -811,8 +782,7 @@
 <!-- ===== INVITE TEXT ===== -->
 <section class="invite-section">
     <div class="section-inner reveal">
-        <div class="section-label">Dear friends!</div>
-        <div class="section-title">Дорогая Карина</div>
+        <div class="section-label">Dear Karina!</div>
         <div class="invite-card">
             <p>
                 <span class="highlight">Карина,</span> этот день — только для тебя!
@@ -980,7 +950,7 @@
     </div>
 </footer>
 
-<script>
+    <script>
     // ===== CONFETTI BURST ON LOAD =====
     (function() {
         const canvas = document.getElementById('confetti-canvas');
